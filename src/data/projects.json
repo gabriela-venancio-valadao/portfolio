@@ -36,5 +36,17 @@
   "live": "",
   "category": "backend",
   "featured": true
-}
+},
+  {
+    "id": 4,
+    "title": "Dev Portfolio — Portfólio Pessoal",
+    "description": "Portfólio interativo com tema Dark Cyber, terminal de comandos e dados configuráveis via JSON, construído com React.js.",
+    "longDescription": "Portfólio pessoal com tema Dark Cyber/Neon, desenvolvido em React.js. Conta com um terminal interativo onde é possível explorar projetos via comandos (ls, cat, grep), seção de habilidades com filtro por categoria e conexão com projetos, timeline de experiência profissional, suporte a imagens de capa em projetos, animações com Framer Motion e design 100% responsivo. Todos os dados são gerenciados via arquivos JSON, facilitando atualizações sem alterar código.",
+    "technologies": ["React", "JavaScript", "CSS3", "Framer Motion", "React Icons"],
+    "image": "SiReact",
+    "github": "https://github.com/gabriela-venancio-valadao",
+    "live": "",
+    "category": "frontend",
+    "featured": true
+  }
 ]
