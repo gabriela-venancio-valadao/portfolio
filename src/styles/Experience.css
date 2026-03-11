@@ -220,6 +220,8 @@
 
 /* Responsivo */
 @media (max-width: 768px) {
+  .experience { padding: 4rem 0; }
+
   .timeline::before {
     left: 20px;
   }
@@ -238,5 +240,49 @@
   .timeline-dot {
     width: 36px;
     height: 36px;
+  }
+
+  .timeline-role {
+    font-size: 1.05rem;
+  }
+
+  .timeline-description {
+    font-size: 0.85rem;
+  }
+
+  .timeline-techs {
+    gap: 0.3rem;
+  }
+
+  .timeline-tech-tag {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.45rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience { padding: 3rem 0; }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    padding-left: 50px;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-connector {
+    left: 15px;
+  }
+
+  .timeline-dot {
+    width: 30px;
+    height: 30px;
+    font-size: 0.75rem;
+  }
+
+  .timeline-role {
+    font-size: 0.95rem;
   }
 }

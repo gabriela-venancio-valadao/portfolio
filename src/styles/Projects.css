@@ -420,11 +420,74 @@
 }
 
 @media (max-width: 768px) {
+  .projects { padding: 4rem 0; }
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
 
   .project-modal {
     max-height: 90vh;
+  }
+
+  .project-modal-overlay {
+    padding: 1rem;
+  }
+
+  .modal-body {
+    padding: 1.2rem 1.5rem 1.5rem;
+  }
+
+  .modal-header {
+    padding: 1.5rem 1.5rem 1rem;
+  }
+
+  .modal-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .project-title {
+    font-size: 1.05rem;
+  }
+
+  .project-info {
+    padding: 1.2rem;
+  }
+
+  .filter-btn {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects { padding: 3rem 0; }
+
+  .project-image {
+    height: 150px;
+  }
+
+  .project-emoji {
+    font-size: 3.5rem;
+  }
+
+  .project-info {
+    padding: 1rem;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+  }
+
+  .modal-description {
+    font-size: 0.88rem;
+  }
+
+  .modal-body {
+    padding: 1rem;
+  }
+
+  .modal-header {
+    padding: 1.2rem 1rem 0.8rem;
   }
 }

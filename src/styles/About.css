@@ -255,6 +255,8 @@
 
 /* Responsivo */
 @media (max-width: 768px) {
+  .about { padding: 4rem 0; }
+
   .about-content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -267,5 +269,29 @@
 
   .avatar-text { font-size: 3rem; }
   .about-card { padding: 1.5rem; }
+  .about-bio { font-size: 0.95rem; }
   .about-links { flex-direction: column; }
+
+  .detail-item {
+    flex-wrap: wrap;
+  }
+
+  .detail-value {
+    word-break: break-all;
+  }
+
+  .interest-tag {
+    font-size: 0.78rem;
+    padding: 0.3rem 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about { padding: 3rem 0; }
+  .about-card { padding: 1.2rem; }
+  .about-bio { font-size: 0.88rem; }
+  .about-image-frame { width: 160px; height: 200px; }
+  .avatar-text { font-size: 2.5rem; }
+  .interest-tag { font-size: 0.72rem; padding: 0.25rem 0.55rem; }
+  .social-link { font-size: 0.82rem; padding: 0.5rem 1rem; }
 }

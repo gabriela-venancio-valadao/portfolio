@@ -423,6 +423,8 @@
    RESPONSIVE
    ============================================ */
 @media (max-width: 768px) {
+  .skills { padding: 4rem 0; }
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
@@ -432,9 +434,25 @@
     max-height: 90vh;
     margin: 0.5rem;
   }
+
+  .skill-modal-header {
+    padding: 1rem 1.2rem;
+  }
+
+  .skill-modal-body {
+    padding: 1rem 1.2rem;
+  }
+
+  .related-project-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .skills { padding: 3rem 0; }
+
   .skills-categories {
     gap: 0.4rem;
   }
@@ -442,5 +460,13 @@
   .category-btn {
     padding: 0.4rem 0.8rem;
     font-size: 0.78rem;
+  }
+
+  .skill-card {
+    padding: 1rem 1.2rem;
+  }
+
+  .skill-name {
+    font-size: 0.9rem;
   }
 }

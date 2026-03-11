@@ -199,4 +199,30 @@
   .carousel-btn {
     display: none;
   }
+
+  .testimonial-text {
+    font-size: 0.92rem;
+  }
+
+  .author-name {
+    font-size: 0.92rem;
+  }
+
+  .author-role {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    padding: 1.2rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.85rem;
+  }
+
+  .author-avatar {
+    font-size: 2rem;
+  }
 }
