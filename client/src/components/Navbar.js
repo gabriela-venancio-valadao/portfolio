@@ -16,10 +16,11 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   const navLinks = [
     { href: '#home', label: 'Início' },
     { href: '#about', label: 'Sobre' },
-    { href: '#skills', label: 'Skills' },
+    { href: '#skills', label: 'Habilidades' },
     { href: '#projects', label: 'Projetos' },
     { href: '#terminal', label: 'Terminal' },
     { href: '#experience', label: 'Experiência' },
+    { href: '#education', label: 'Formação' },
     { href: '#testimonials', label: 'Depoimentos' },
     { href: '#contact', label: 'Contato' }
   ];

@@ -1,26 +1,11 @@
 [
   {
     "id": 1,
-    "name": "Maria Silva",
-    "role": "Product Manager",
-    "company": "Tech Company",
-    "text": "Profissional excepcional! Entrega código de alta qualidade com atenção aos detalhes. Sempre disposto(a) a ajudar a equipe.",
-    "avatar": "👩‍💼"
-  },
-  {
-    "id": 2,
-    "name": "João Santos",
-    "role": "CTO",
-    "company": "Startup Inc",
-    "text": "Um dos melhores devs com quem já trabalhei. Capacidade técnica impressionante e excelente comunicação.",
-    "avatar": "👨‍💻"
-  },
-  {
-    "id": 3,
-    "name": "Ana Oliveira",
-    "role": "Tech Lead",
-    "company": "Digital Agency",
-    "text": "Sempre traz soluções criativas e bem fundamentadas. Mentoria incrível para devs mais novos.",
-    "avatar": "👩‍🔬"
+    "name": "Anderson Chidi Apunike",
+    "role": "Senior Software Engineer",
+    "company": "SulAmérica Seguros Saúde",
+    "text": "Uma profissional extremamente dedicada e com notável habilidade em lidar com diversas tecnologias. Foi um prazer colaborar com ela nos projetos, sua competência e empenho foram fundamentais para o sucesso da equipe.",
+    "avatar": "👨🏿‍💻",
+    "linkedin": "https://linkedin.com/in/anderson-chidi/"
   }
 ]

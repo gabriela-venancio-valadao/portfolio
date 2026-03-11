@@ -104,6 +104,31 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.testimonial-author:hover {
+  opacity: 0.8;
+}
+
+.testimonial-author:hover .author-linkedin-tag {
+  opacity: 1;
+}
+
+.author-linkedin-tag {
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  color: #0A66C2;
+  background: rgba(10, 102, 194, 0.12);
+  border: 1px solid rgba(10, 102, 194, 0.3);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+  white-space: nowrap;
 }
 
 .author-avatar {

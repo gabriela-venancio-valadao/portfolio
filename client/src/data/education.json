@@ -1,0 +1,33 @@
+{
+  "formations": [
+    {
+      "id": 1,
+      "degree": "Pós-graduação em Cybersecurity Ofensiva",
+      "institution": "FIAP",
+      "period": "Em andamento",
+      "status": "inProgress",
+      "icon": "FaShieldAlt",
+      "description": "Especialização em segurança cibernética com abordagem ofensiva — baseada na premissa de que para proteger sistemas com eficiência, é essencial compreender profundamente como os ataques são concebidos e executados. A formação abrange técnicas de pentesting, exploração de vulnerabilidades, análise de malware, engenharia reversa e simulação de ameaças reais. O domínio do mindset ofensivo é aplicado diretamente à construção de arquiteturas e códigos mais resilientes, elevando o nível de maturidade em segurança além das práticas reativas convencionais."
+    },
+    {
+      "id": 2,
+      "degree": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+      "institution": "FATEC",
+      "period": "Concluído em 2023",
+      "status": "completed",
+      "icon": "FaGraduationCap",
+      "description": "Formação tecnológica com sólida base em engenharia de software, modelagem e implementação de sistemas, estruturas de dados, arquitetura de banco de dados relacionais e não relacionais, redes de computadores e paradigmas de programação orientada a objetos. A grade curricular proporcionou uma visão completa do ciclo de vida do desenvolvimento de software — da análise de requisitos à entrega em produção — consolidando a capacidade de projetar soluções técnicas robustas, escaláveis e alinhadas às necessidades do negócio."
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "icon": "FaShieldAlt",
+      "name": "CompTIA Security+",
+      "issuer": "CompTIA",
+      "period": "Em andamento",
+      "year": "2026",
+      "url": ""
+    }
+  ]
+}

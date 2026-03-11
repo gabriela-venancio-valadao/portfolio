@@ -169,7 +169,7 @@ const TerminalProjects = ({ projects }) => {
         newLines.push(
           { type: 'info', text: '' },
           { type: 'title', text: `  ╭${'─'.repeat(50)}╮` },
-          { type: 'title', text: `  │  ${project.image}  ${project.title.padEnd(44).substring(0, 44)} │` },
+          { type: 'title', text: `  │  ◈  ${project.title.padEnd(46).substring(0, 46)} │` },
           { type: 'title', text: `  ╰${'─'.repeat(50)}╯` },
           { type: 'info', text: '' },
           { type: 'label', text: '  📋 Descrição:' },
@@ -490,7 +490,7 @@ const TerminalProjects = ({ projects }) => {
         <div className="section-header">
           <span className="section-icon">🐧</span>
           <h2 className="section-title">Terminal</h2>
-          <p className="section-subtitle">// Explore projetos como um hacker de verdade</p>
+          <p className="section-subtitle">// terminal.exec("ls projetos")</p>
           <div className="title-decoration">
             <span className="deco-leaf">{'<'}</span>
             <div className="decoration-line"></div>

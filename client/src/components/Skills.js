@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { IconComponent } from '../utils/iconMap';
 import '../styles/Skills.css';
 
 const Skills = ({ skills, projects, onNavigateToProject }) => {
@@ -23,8 +24,7 @@ const Skills = ({ skills, projects, onNavigateToProject }) => {
     if (!projects) return [];
     return projects.filter(p =>
       p.technologies.some(tech =>
-        tech.toLowerCase().includes(skillName.toLowerCase()) ||
-        skillName.toLowerCase().includes(tech.toLowerCase())
+        tech.toLowerCase() === skillName.toLowerCase()
       )
     );
   };
@@ -48,8 +48,8 @@ const Skills = ({ skills, projects, onNavigateToProject }) => {
       <div className={`section-container ${inView ? 'animate-in' : ''}`}>
         <div className="section-header">
           <span className="section-icon">{'⚡'}</span>
-          <h2 className="section-title">Skills & Tecnologias</h2>
-          <p className="section-subtitle">// click to explore related projects</p>
+          <h2 className="section-title">Habilidades & Tecnologias</h2>
+          <p className="section-subtitle">// skills.load()</p>
           <div className="title-decoration">
             <span className="deco-leaf">{'<'}</span>
             <div className="decoration-line"></div>
@@ -82,7 +82,7 @@ const Skills = ({ skills, projects, onNavigateToProject }) => {
                 tabIndex={0}
               >
                 <div className="skill-content">
-                  <span className="skill-icon">{skill.icon}</span>
+                  <span className="skill-icon"><IconComponent name={skill.icon} size={24} /></span>
                   <div className="skill-info">
                     <h3 className="skill-name">{skill.name}</h3>
                     <span className="skill-category-tag">{getCategoryLabel(skill.category)}</span>
@@ -105,18 +105,18 @@ const Skills = ({ skills, projects, onNavigateToProject }) => {
           <div className="skill-modal" onClick={e => e.stopPropagation()}>
             <button className="modal-close" onClick={() => setSelectedSkill(null)}>✕</button>
             <div className="skill-modal-header">
-              <span className="modal-skill-icon">{selectedSkill.icon}</span>
+              <span className="modal-skill-icon"><IconComponent name={selectedSkill.icon} size={36} /></span>
               <div>
                 <h2>{selectedSkill.name}</h2>
                 <span className="modal-skill-category">{getCategoryLabel(selectedSkill.category)}</span>
               </div>
             </div>
             <div className="skill-modal-body">
-              <h3 className="modal-section-title">Projetos com {selectedSkill.name}</h3>
+              <h3 className="modal-section-title">Projetos pessoais com {selectedSkill.name}</h3>
               {getRelatedProjects(selectedSkill.name).length === 0 ? (
                 <div className="no-projects">
                   <span className="no-projects-icon">📂</span>
-                  <p>Nenhum projeto listado com esta tecnologia ainda.</p>
+                  <p>Nenhum projeto pessoal listado com esta tecnologia ainda.</p>
                 </div>
               ) : (
                 <div className="related-projects-list">
@@ -126,7 +126,7 @@ const Skills = ({ skills, projects, onNavigateToProject }) => {
                       className="related-project-card"
                       onClick={() => handleProjectClick(project)}
                     >
-                      <div className="related-project-icon"><span>{project.image}</span></div>
+                      <div className="related-project-icon"><span><IconComponent name={project.image} size={22} /></span></div>
                       <div className="related-project-info">
                         <h4>{project.title}</h4>
                         <p>{project.description}</p>

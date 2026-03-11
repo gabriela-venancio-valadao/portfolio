@@ -28,7 +28,7 @@ const Contact = () => {
             </div>
             <h3>Vamos Conversar</h3>
             <p>
-              Estou sempre aberto(a) a novos projetos, ideias criativas ou
+              Estou sempre aberta a novos projetos, ideias criativas ou
               oportunidades de colaboração. Me chama no WhatsApp!
             </p>
 
@@ -67,7 +67,7 @@ const Contact = () => {
               </div>
               <div className="contact-method">
                 <span className="method-icon">✔</span>
-                <span>Disponível para projetos</span>
+                <span>Disponível para Novas Oportunidades</span>
               </div>
             </div>
           </div>

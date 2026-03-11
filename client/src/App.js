@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import TerminalProjects from './components/TerminalProjects';
 import Experience from './components/Experience';
+import Education from './components/Education';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -17,6 +18,7 @@ import profileData from './data/profile.json';
 import skillsData from './data/skills.json';
 import projectsData from './data/projects.json';
 import experienceData from './data/experience.json';
+import educationData from './data/education.json';
 import testimonialsData from './data/testimonials.json';
 import statsData from './data/stats.json';
 
@@ -81,6 +83,7 @@ function App() {
         />
         <TerminalProjects projects={projectsData} />
         <Experience experience={experienceData} />
+        <Education education={educationData} />
         <Testimonials testimonials={testimonialsData} />
         <Contact />
       </main>

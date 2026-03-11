@@ -35,8 +35,18 @@ const Experience = ({ experience }) => {
               <div className="timeline-card">
                 <div className="timeline-card-header">
                   <span className="timeline-period">{exp.period}</span>
+                  {exp.consultant && (
+                    <span className="timeline-consultant-badge">
+                      🏢 Consultora · <span className="accenture-tag">Accenture</span>
+                    </span>
+                  )}
                   <h3 className="timeline-role">{exp.role}</h3>
-                  <p className="timeline-company">{exp.company}</p>
+                  {exp.client && (
+                    <p className="timeline-client">
+                      <span className="timeline-client-name">{exp.client}</span>
+                      {exp.clientLabel && <span className="timeline-client-label"> · {exp.clientLabel}</span>}
+                    </p>
+                  )}
                 </div>
                 <p className="timeline-description">{exp.description}</p>
                 <div className="timeline-techs">

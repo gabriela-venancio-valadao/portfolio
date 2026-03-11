@@ -43,13 +43,19 @@ const Testimonials = ({ testimonials }) => {
               >
                 <div className="testimonial-quote-icon">❝</div>
                 <p className="testimonial-text">"{t.text}"</p>
-                <div className="testimonial-author">
+                <a
+                  href={t.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="testimonial-author"
+                >
                   <span className="author-avatar">{t.avatar}</span>
                   <div className="author-info">
                     <h4 className="author-name">{t.name}</h4>
                     <p className="author-role">{t.role} @ {t.company}</p>
                   </div>
-                </div>
+                  <span className="author-linkedin-tag">LinkedIn ↗</span>
+                </a>
               </div>
             ))}
           </div>

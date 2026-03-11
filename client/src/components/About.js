@@ -56,13 +56,22 @@ const About = ({ profile }) => {
                 <h3>passions</h3>
                 <div className="interest-tags">
                   <span className="interest-tag">Arquitetura de Software</span>
-                  <span className="interest-tag">UI/UX Design</span>
+                  <span className="interest-tag">Backend Development</span>
                   <span className="interest-tag">Apps Responsivos</span>
-                  <span className="interest-tag">Segurança Web</span>
+                  <span className="interest-tag">Frontend Development</span>
+                  <span className="interest-tag">Sistemas Integrados</span>
+                  <span className="interest-tag">Rest APIs</span>
                   <span className="interest-tag">Performance</span>
-                  <span className="interest-tag">Mentoria</span>
                   <span className="interest-tag">Aprendizado Contínuo</span>
                   <span className="interest-tag">Open Source</span>
+                  <span className="interest-tag">Cybersecurity</span>
+                  <span className="interest-tag">Clean Code</span>
+                  <span className="interest-tag">Cloud Computing</span>
+                  <span className="interest-tag">CI/CD</span>
+                  <span className="interest-tag">Testes Automatizados</span>
+                  <span className="interest-tag">Resolução de Problemas</span>
+                  <span className="interest-tag">Trabalho em Equipe</span>
+                  <span className="interest-tag">Metodologias Ágeis</span>
                 </div>
               </div>
 

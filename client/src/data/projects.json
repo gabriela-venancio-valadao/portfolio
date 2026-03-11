@@ -3,9 +3,9 @@
     "id": 1,
     "title": "Broken Access Control Lab",
     "description": "Projeto educacional que demonstra vulnerabilidades de Broken Access Control em aplicações web e como corrigi-las. 🚧 Em construção.",
-    "longDescription": "Laboratório prático de segurança com duas versões: uma intencionalmente vulnerável (v1) e outra corrigida (v2). Demonstra falhas reais como IDOR, escalação de privilégios, forced browsing e manipulação de parâmetros. Arquitetura com Controllers, Services, Repositories e Middlewares de autenticação/autorização. A versão segura implementa validação de ownership, middleware de auth, verificação de roles, JWT com expiração e controle de acesso a arquivos. Frontend em React e backend em Java.",
-    "technologies": ["React", "Java", "JWT", "Spring", "Security", "OWASP"],
-    "image": "🛡️",
+    "longDescription": "Laboratório prático de segurança com duas versões: uma intencionalmente vulnerável (v1) e outra corrigida (v2). Demonstra falhas reais como IDOR, escalação de privilégios, forced browsing e manipulação de parâmetros. Arquitetura com Controllers, Services, Repositories e Middlewares de autenticação/autorização. A versão segura implementa validação de ownership, middleware de auth, verificação de roles, JWT com expiração e controle de acesso a arquivos. Frontend em React.",
+    "technologies": ["React", "Node.js", "JWT", "Express", "OWASP", "Security","REST APIs","OWASP Top 10"],
+    "image": "FaShieldAlt",
     "github": "https://github.com/gabriela-venancio-valadao/gerenciador-de-senhas",
     "live": "",
     "category": "fullstack",
@@ -14,63 +14,27 @@
   },
   {
     "id": 2,
-    "title": "Chat em Tempo Real",
-    "description": "Aplicação de chat com salas, mensagens privadas, compartilhamento de arquivos e notificações push.",
-    "longDescription": "Construído com Socket.io para comunicação em tempo real, MongoDB para persistência, React com Context API para gerenciamento de estado. Autenticação JWT com refresh tokens.",
-    "technologies": ["React", "Socket.io", "MongoDB", "Node.js", "JWT", "Cloudinary"],
-    "image": "💬",
-    "github": "https://github.com/seuusuario/realtime-chat",
-    "live": "https://chat-demo.vercel.app",
-    "category": "fullstack",
-    "featured": true
-  },
-  {
-    "id": 3,
-    "title": "Dashboard Analytics",
-    "description": "Painel administrativo com gráficos interativos, relatórios em PDF, filtros avançados e exportação de dados.",
-    "longDescription": "Frontend em React com Recharts e D3.js para visualizações. Backend GraphQL com Apollo Server. Autenticação via OAuth2. Sistema de permissões granular baseado em roles.",
-    "technologies": ["React", "GraphQL", "D3.js", "Apollo", "PostgreSQL", "OAuth2"],
-    "image": "📊",
-    "github": "https://github.com/seuusuario/analytics-dashboard",
-    "live": "https://dashboard-demo.vercel.app",
-    "category": "frontend",
-    "featured": true
-  },
-  {
-    "id": 4,
-    "title": "API de Microserviços",
-    "description": "Arquitetura de microserviços com gateway API, service discovery, circuit breaker e monitoramento.",
-    "longDescription": "Ecosistema de microserviços usando NestJS, RabbitMQ para messaging, Consul para service discovery, implementação de Circuit Breaker pattern, monitoria com Prometheus + Grafana.",
-    "technologies": ["NestJS", "RabbitMQ", "Docker", "Kubernetes", "Prometheus", "Grafana"],
-    "image": "🔧",
-    "github": "https://github.com/seuusuario/microservices-api",
+    "title": "U4TM — Underground For The Masses",
+    "description": "Catálogo web de bandas punk rock com busca, filtro por país e discografias completas, construído com React e navegação por rotas.",
+    "longDescription": "U4TM — Underground For The Masses é uma aplicação web desenvolvida em React com Vite, dedicada a catalogar bandas icônicas do punk rock e seus álbuns. O projeto conta com busca, filtro por país e páginas de detalhes para cada banda, com discografias completas. A interface foi construída com componentes reutilizáveis, navegação por rotas e design responsivo.",
+    "technologies": ["React", "JavaScript", "React Router DOM", "Vite", "CSS Modules","Engenharia de Prompt"],
+    "image": "FaGuitar",
+    "coverImage": "/Underground For The Masses.png",
+    "github": "https://github.com/gabriela-venancio-valadao/U4TM",
     "live": "",
-    "category": "backend",
-    "featured": false
-  },
-  {
-    "id": 5,
-    "title": "App de Gestão de Tarefas",
-    "description": "Aplicação completa de gerenciamento de projetos com Kanban, calendário, time tracking e integrações.",
-    "longDescription": "Inspirado no Trello/Notion, construído com Next.js 14, Server Actions, Prisma ORM, PostgreSQL. Funcionalidades de drag-and-drop, filtros avançados e relatórios de produtividade.",
-    "technologies": ["Next.js", "Prisma", "PostgreSQL", "Tailwind", "Zustand", "Vercel"],
-    "image": "📋",
-    "github": "https://github.com/seuusuario/task-manager",
-    "live": "https://tasks-demo.vercel.app",
-    "category": "fullstack",
-    "featured": true
-  },
-  {
-    "id": 6,
-    "title": "Blog com CMS Headless",
-    "description": "Blog completo com CMS headless, editor rich text, SEO otimizado, sitemap automático e RSS feed.",
-    "longDescription": "Construído com Next.js SSG/ISR para performance máxima, Sanity.io como CMS headless, otimização de imagens automática, score 100 no Lighthouse.",
-    "technologies": ["Next.js", "Sanity.io", "Tailwind", "Vercel", "SEO"],
-    "image": "📝",
-    "github": "https://github.com/seuusuario/blog-cms",
-    "live": "https://blog-demo.vercel.app",
     "category": "frontend",
-    "featured": false
-  }
-  
+    "featured": true
+},
+  {
+  "id": 3,
+  "title": "Library API — API de Gestão de Livraria",
+  "description": "API REST para gerenciamento de autores e livros, com validações de negócio e persistência de dados, construída com Java e Spring Boot.",
+  "longDescription": "Library API é uma aplicação backend desenvolvida com Java e Spring Boot para gerenciar dados de uma livraria. O projeto implementa endpoints REST para operações de cadastro, consulta, atualização e remoção de autores (e estrutura para livros), utilizando camada de serviço, repositórios JPA e validações de domínio. A arquitetura segue boas práticas de separação por camadas (controller, service, repository, model, validator), com foco em organização, manutenção e escalabilidade.",
+  "technologies": ["Java", "Spring Boot", "Spring Web", "Spring Data JPA", "Maven", "YAML", "REST APIs"],
+  "image": "FaBook",
+  "github": "https://github.com/gabriela-venancio-valadao/library-api",
+  "live": "",
+  "category": "backend",
+  "featured": true
+}
 ]

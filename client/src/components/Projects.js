@@ -1,5 +1,6 @@
 import React, { useState, useEffect, forwardRef } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { IconComponent } from '../utils/iconMap';
 import '../styles/Projects.css';
 
 const Projects = forwardRef(({ projects, externalSelectedProject, clearExternalProject }, outerRef) => {
@@ -68,7 +69,11 @@ const Projects = forwardRef(({ projects, externalSelectedProject, clearExternalP
               {project.featured && <span className="featured-badge">★ Destaque</span>}
               {project.inProgress && <span className="in-progress-badge">🚧 Em construção</span>}
               <div className="project-image">
-                <span className="project-emoji">{project.image}</span>
+                {project.coverImage ? (
+                  <img src={project.coverImage} alt={project.title} className="project-cover-img" />
+                ) : (
+                  <span className="project-emoji"><IconComponent name={project.image} size={48} /></span>
+                )}
                 <div className="project-overlay">
                   <span>Ver Detalhes →</span>
                 </div>
@@ -109,7 +114,11 @@ const Projects = forwardRef(({ projects, externalSelectedProject, clearExternalP
           <div className="project-modal" onClick={e => e.stopPropagation()}>
             <button className="modal-close" onClick={() => setSelectedProject(null)}>✕</button>
             <div className="modal-header">
-              <span className="modal-emoji">{selectedProject.image}</span>
+              {selectedProject.coverImage ? (
+                <img src={selectedProject.coverImage} alt={selectedProject.title} className="modal-cover-img" />
+              ) : (
+                <span className="modal-emoji"><IconComponent name={selectedProject.image} size={52} /></span>
+              )}
               <h2>{selectedProject.title}</h2>
               {selectedProject.featured && <span className="modal-badge">★ Projeto Destaque</span>}
               {selectedProject.inProgress && <span className="modal-badge in-progress">🚧 Em construção</span>}

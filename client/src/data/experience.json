@@ -1,26 +1,46 @@
 [
   {
     "id": 1,
-    "company": "Tech Company Senior",
-    "role": "Desenvolvedor Fullstack Senior",
-    "period": "2023 - Presente",
-    "description": "Liderança técnica de equipe de 8 devs. Arquitetura de sistemas distribuídos, code reviews, mentoria de juniors. Redução de 40% no tempo de deploy com implementação de CI/CD.",
-    "technologies": ["React", "Node.js", "AWS", "PostgreSQL", "Docker"]
-  },
-  {
-    "id": 2,
-    "company": "Startup Inovadora",
-    "role": "Desenvolvedor Fullstack Pleno/Senior",
-    "period": "2021 - 2023",
-    "description": "Desenvolvimento do produto principal do zero ao lançamento. Implementação de arquitetura de microsserviços, sistema de pagamentos e dashboard em tempo real.",
-    "technologies": ["Next.js", "NestJS", "MongoDB", "Redis", "Stripe"]
+    "company": "Accenture",
+    "role": "Desenvolvedora de Software & Analista",
+    "period": "2023 – 2025",
+    "consultant": true,
+    "client": "EssilorLuxottica",
+    "clientLabel": "Arquitetura, Segurança e Engagement Cloud",
+    "description": "Reestruturação de arquitetura de páginas para otimizar fluxo de dados e reduzir chamadas de API. Participação no planejamento e evolução da arquitetura do sistema. Desenvolvimento de novos fluxos e funcionalidades backend e frontend. Análise e correção de erros em ambiente de produção. Implementação de melhorias para aumento da segurança e correção de vulnerabilidades. Utilização de IA Agêntica e Engenharia de Prompt para automação de análises e geração de fluxos. Integração com Oracle Engagement Cloud e apoio no treinamento e onboarding de novos colaboradores.",
+    "technologies": ["React", "Node.js", "PHP", "Oracle Engagement Cloud", "OWASP", "JWT", "IA Agêntica", "Prompt Engineering", "Java",  "Groovy"]
   },
   {
     "id": 3,
-    "company": "Agência Digital",
-    "role": "Desenvolvedor Frontend Pleno",
-    "period": "2019 - 2021",
-    "description": "Desenvolvimento de mais de 20 projetos web para clientes variados. Migração de projetos legados jQuery para React. Implementação de design systems.",
-    "technologies": ["React", "Vue.js", "TypeScript", "SASS", "Figma"]
+    "company": "Accenture",
+    "role": "Desenvolvedora de Software & Analista",
+    "period": "2022 – 2023",
+    "consultant": true,
+    "client": "MRV",
+    "clientLabel": "Sistemas Integrados e Metodologias Ágeis",
+    "description": "Desenvolvimento customizado e integração de sistemas com RightNow, Oracle Commerce Cloud e Oracle Integration Cloud. Correções de erros e melhorias com JavaScript, Java e PHP. Resposta a incidentes críticos em produção sob metodologia Scrum.",
+    "technologies": ["JavaScript", "Java", "PHP", "Oracle RightNow", "Oracle Commerce Cloud", "Scrum"]
+  },
+  {
+    "id": 4,
+    "company": "Accenture",
+    "role": "Desenvolvedora de Software & Analista",
+    "period": "2022 – 2023",
+    "consultant": true,
+    "client": "Valia (Vale S.A.)",
+    "clientLabel": "Sistemas Integrados e Análise",
+    "description": "Desenvolvimento e manutenção de sistemas integrados com Oracle RightNow. Criação de novos fluxos e personalizações via PHP e JavaScript. Integração com APIs externas e internas. Correções de código com foco em segurança e boas práticas. Análise de erros, leitura de logs e resolução de falhas lógicas complexas em ambiente de produção.",
+    "technologies": ["PHP", "JavaScript", "Oracle RightNow", "REST APIs", "Análise de Logs"]
+  },
+  {
+    "id": 5,
+    "company": "Accenture",
+    "role": "Desenvolvedora de Software & Analista",
+    "period": "2022 – 2022",
+    "consultant": true,
+    "client": "Ortobom",
+    "clientLabel": "Sistemas Oracle RightNow",
+    "description": "Desenvolvimento e manutenção de sistemas integrados com Oracle RightNow. Personalizações via PHP, Java e JavaScript, análise de logs e resolução de erros em ambiente de produção.",
+    "technologies": ["PHP", "JavaScript", "Java", "Oracle RightNow", "Análise de Logs"]
   }
 ]

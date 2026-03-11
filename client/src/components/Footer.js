@@ -13,7 +13,7 @@ const Footer = ({ profile }) => {
         <div className="footer-top">
           <div className="footer-brand">
             <span className="footer-logo">{'> dev.folio'}</span>
-            <p className="footer-tagline">Building digital experiences with code & passion</p>
+            <p className="footer-tagline">Obrigada por visitar meu portfólio! Se curtiu o que viu, vamos conversar — estou sempre aberta a novas conexões e oportunidades.</p>
           </div>
 
           <div className="footer-links">
@@ -46,10 +46,10 @@ const Footer = ({ profile }) => {
             <div className="decoration-line"></div>
           </div>
           <p className="footer-copyright">
-            © {currentYear} — Crafted with {'<3'} && code
+            © {currentYear} Gabriela Venancio — Feito com dedicação e muito café ☕
           </p>
           <p className="footer-made-with">
-            React.js · Node.js · Express · Neon
+            React.js | CSS3 | Criatividade
           </p>
         </div>
       </div>
