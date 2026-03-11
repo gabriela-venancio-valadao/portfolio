@@ -1,0 +1,22 @@
+[
+  { "name": "React.js", "level": 95, "category": "frontend", "icon": "⚛️" },
+  { "name": "Next.js", "level": 90, "category": "frontend", "icon": "▲" },
+  { "name": "TypeScript", "level": 92, "category": "frontend", "icon": "🔷" },
+  { "name": "Vue.js", "level": 80, "category": "frontend", "icon": "💚" },
+  { "name": "Tailwind CSS", "level": 88, "category": "frontend", "icon": "🎨" },
+  { "name": "Redux / Zustand", "level": 85, "category": "frontend", "icon": "🔄" },
+  { "name": "Node.js", "level": 93, "category": "backend", "icon": "💚" },
+  { "name": "Express.js", "level": 90, "category": "backend", "icon": "🚀" },
+  { "name": "NestJS", "level": 85, "category": "backend", "icon": "🐈" },
+  { "name": "Python / Django", "level": 78, "category": "backend", "icon": "🐍" },
+  { "name": "GraphQL", "level": 82, "category": "backend", "icon": "◈" },
+  { "name": "REST APIs", "level": 95, "category": "backend", "icon": "🌐" },
+  { "name": "PostgreSQL", "level": 90, "category": "database", "icon": "🐘" },
+  { "name": "MongoDB", "level": 87, "category": "database", "icon": "🍃" },
+  { "name": "Redis", "level": 80, "category": "database", "icon": "🔴" },
+  { "name": "Prisma ORM", "level": 88, "category": "database", "icon": "📐" },
+  { "name": "Docker", "level": 85, "category": "devops", "icon": "🐳" },
+  { "name": "AWS", "level": 82, "category": "devops", "icon": "☁️" },
+  { "name": "CI/CD", "level": 80, "category": "devops", "icon": "♾️" },
+  { "name": "Git", "level": 95, "category": "devops", "icon": "📦" }
+]

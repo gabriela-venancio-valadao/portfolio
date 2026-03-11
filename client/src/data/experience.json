@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "company": "Tech Company Senior",
+    "role": "Desenvolvedor Fullstack Senior",
+    "period": "2023 - Presente",
+    "description": "Liderança técnica de equipe de 8 devs. Arquitetura de sistemas distribuídos, code reviews, mentoria de juniors. Redução de 40% no tempo de deploy com implementação de CI/CD.",
+    "technologies": ["React", "Node.js", "AWS", "PostgreSQL", "Docker"]
+  },
+  {
+    "id": 2,
+    "company": "Startup Inovadora",
+    "role": "Desenvolvedor Fullstack Pleno/Senior",
+    "period": "2021 - 2023",
+    "description": "Desenvolvimento do produto principal do zero ao lançamento. Implementação de arquitetura de microsserviços, sistema de pagamentos e dashboard em tempo real.",
+    "technologies": ["Next.js", "NestJS", "MongoDB", "Redis", "Stripe"]
+  },
+  {
+    "id": 3,
+    "company": "Agência Digital",
+    "role": "Desenvolvedor Frontend Pleno",
+    "period": "2019 - 2021",
+    "description": "Desenvolvimento de mais de 20 projetos web para clientes variados. Migração de projetos legados jQuery para React. Implementação de design systems.",
+    "technologies": ["React", "Vue.js", "TypeScript", "SASS", "Figma"]
+  }
+]

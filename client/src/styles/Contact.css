@@ -1,0 +1,195 @@
+/* ============================================
+   CONTACT - WhatsApp & LinkedIn Focus
+   ============================================ */
+.contact {
+  padding: 6rem 0;
+  background: var(--cyber-bg-light);
+  position: relative;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(ellipse at 20% 80%, rgba(0, 240, 255, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(168, 85, 247, 0.04) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+}
+
+/* Card centralizado */
+.contact-card-centered {
+  background: var(--cyber-surface);
+  padding: 2.5rem 3rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--cyber-border);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 520px;
+  width: 100%;
+}
+
+.contact-card-centered::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gradient-primary);
+  opacity: 0.5;
+}
+
+.contact-illustration {
+  margin-bottom: 1.5rem;
+}
+
+.mail-scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mail-letter {
+  font-size: 3rem;
+  filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.3));
+  animation: float 3s ease-in-out infinite;
+}
+
+.contact-card-centered h3 {
+  font-size: 1.4rem;
+  color: var(--text-bright);
+  margin-bottom: 0.8rem;
+}
+
+.contact-card-centered p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* WhatsApp button - primary CTA */
+.contact-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.contact-whatsapp-btn:hover {
+  background: #20bd5a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.45);
+}
+
+.contact-whatsapp-btn:active {
+  transform: translateY(0);
+}
+
+/* Divider */
+.contact-divider {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  gap: 1rem;
+}
+
+.contact-divider::before,
+.contact-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--cyber-border);
+}
+
+.contact-divider span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
+/* LinkedIn button - secondary */
+.contact-linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.85rem 2rem;
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--cyber-border);
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-linkedin-btn:hover {
+  border-color: #0a66c2;
+  color: #0a66c2;
+  background: rgba(10, 102, 194, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Contact methods */
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--cyber-border);
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+}
+
+.method-icon {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .contact-card-centered {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}

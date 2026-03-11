@@ -1,0 +1,622 @@
+/* ============================================
+   TERMINAL PROJECTS - Linux Terminal Theme
+   ============================================ */
+.terminal-projects {
+  padding: 6rem 0;
+  background: var(--cyber-bg);
+  position: relative;
+}
+
+/* Quick Commands */
+.terminal-quick-cmds {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.quick-cmd-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(80, 250, 123, 0.2);
+  background: rgba(30, 30, 40, 0.6);
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: rgba(80, 250, 123, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quick-cmd-btn:hover {
+  border-color: rgba(80, 250, 123, 0.6);
+  background: rgba(80, 250, 123, 0.08);
+  color: #50fa7b;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(80, 250, 123, 0.1);
+}
+
+.quick-dollar {
+  color: #ff79c6;
+  font-weight: 700;
+}
+
+/* ============================================
+   Terminal Window
+   ============================================ */
+.terminal-window {
+  max-width: 950px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(80, 250, 123, 0.1),
+    0 20px 60px rgba(0, 0, 0, 0.6),
+    0 0 80px rgba(80, 250, 123, 0.03);
+  transition: box-shadow 0.4s ease;
+}
+
+.terminal-window:hover {
+  box-shadow:
+    0 0 0 1px rgba(80, 250, 123, 0.2),
+    0 25px 80px rgba(0, 0, 0, 0.7),
+    0 0 120px rgba(80, 250, 123, 0.05);
+}
+
+/* Title Bar */
+.terminal-titlebar {
+  display: flex;
+  align-items: center;
+  padding: 0.65rem 1rem;
+  background: #1a1b26;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  gap: 1rem;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.term-btn {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.term-btn:hover {
+  filter: brightness(1.3);
+}
+
+.term-btn-close {
+  background: #ff5f57;
+}
+
+.term-btn-minimize {
+  background: #ffbd2e;
+}
+
+.term-btn-maximize {
+  background: #28c840;
+}
+
+.terminal-title-text {
+  flex: 1;
+  text-align: center;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.35);
+  letter-spacing: 0.3px;
+}
+
+.terminal-titlebar-right {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.terminal-tab {
+  padding: 0.2rem 0.8rem;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.terminal-tab.active {
+  color: #50fa7b;
+  background: rgba(80, 250, 123, 0.08);
+}
+
+/* ============================================
+   Terminal Body
+   ============================================ */
+.terminal-body {
+  background: #0d1117;
+  padding: 1.2rem 1.5rem;
+  min-height: 420px;
+  max-height: 600px;
+  overflow-y: auto;
+  cursor: text;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 0.85rem;
+  line-height: 1.65;
+  position: relative;
+
+  /* Custom scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(80, 250, 123, 0.2) transparent;
+}
+
+.terminal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+  background: rgba(80, 250, 123, 0.2);
+  border-radius: 3px;
+}
+
+.terminal-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(80, 250, 123, 0.4);
+}
+
+/* ============================================
+   Terminal Lines
+   ============================================ */
+.term-line {
+  white-space: pre-wrap;
+  word-break: break-word;
+  padding: 1px 0;
+  animation: termFadeIn 0.15s ease;
+}
+
+@keyframes termFadeIn {
+  from { opacity: 0; transform: translateY(2px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Command line */
+.term-command-line {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-top: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.term-prompt {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.term-user {
+  color: #50fa7b;
+  font-weight: 700;
+}
+
+.term-at {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.term-host {
+  color: #bd93f9;
+  font-weight: 600;
+}
+
+.term-colon {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.term-path {
+  color: #8be9fd;
+  font-weight: 500;
+}
+
+.term-dollar {
+  color: #ff79c6;
+  font-weight: 700;
+  margin: 0 0.5rem 0 0.2rem;
+}
+
+.term-cmd-text {
+  color: #f8f8f2;
+  font-weight: 500;
+}
+
+.term-timestamp {
+  margin-left: auto;
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 0.72rem;
+}
+
+/* Line types */
+.term-system {
+  color: #bd93f9;
+  font-size: 0.6rem;
+  line-height: 1.1;
+  letter-spacing: 0;
+  opacity: 0.9;
+}
+
+.term-info {
+  color: rgba(255, 255, 255, 0.5);
+  min-height: 0.5em;
+}
+
+.term-success {
+  color: #50fa7b;
+}
+
+.term-error {
+  color: #ff5555;
+}
+
+.term-warning {
+  color: #ffb86c;
+}
+
+.term-muted {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.term-title {
+  color: #bd93f9;
+  font-weight: 600;
+}
+
+.term-label {
+  color: #8be9fd;
+  font-weight: 600;
+}
+
+.term-description {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+}
+
+/* Links */
+.term-link {
+  color: #8be9fd;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.term-link:hover {
+  color: #50fa7b;
+  text-shadow: 0 0 10px rgba(80, 250, 123, 0.4);
+}
+
+.term-link-icon {
+  color: #50fa7b;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.term-link:hover .term-link-icon {
+  opacity: 1;
+}
+
+/* Help */
+.term-help {
+  display: flex;
+  align-items: baseline;
+}
+
+.term-help-cmd {
+  color: #50fa7b;
+  font-weight: 600;
+  min-width: 260px;
+}
+
+.term-help-desc {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* Table */
+.term-table-header {
+  color: #ff79c6;
+  font-weight: 700;
+  border-bottom: none;
+}
+
+.term-table-divider {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.term-table-row {
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 4px;
+  padding: 2px 0;
+}
+
+.term-table-row:hover {
+  color: #50fa7b;
+  background: rgba(80, 250, 123, 0.05);
+  text-shadow: 0 0 8px rgba(80, 250, 123, 0.3);
+}
+
+.term-table-row.term-featured {
+  color: #f1fa8c;
+}
+
+.term-table-row.term-featured:hover {
+  color: #50fa7b;
+}
+
+/* Tree */
+.term-tree-item {
+  color: #8be9fd;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.term-tree-item:hover {
+  color: #50fa7b;
+  text-shadow: 0 0 10px rgba(80, 250, 123, 0.3);
+}
+
+/* Tech list */
+.term-tech {
+  color: #ffb86c;
+}
+
+/* Search result */
+.term-search-result {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 2px 0;
+  transition: background 0.2s;
+}
+
+.term-search-result:hover {
+  background: rgba(80, 250, 123, 0.05);
+}
+
+/* Category colors */
+.term-cyan {
+  color: #8be9fd;
+  font-weight: 600;
+}
+
+.term-green {
+  color: #50fa7b;
+  font-weight: 600;
+}
+
+.term-yellow {
+  color: #f1fa8c;
+  font-weight: 600;
+}
+
+.term-white {
+  color: #f8f8f2;
+  font-weight: 600;
+}
+
+/* Neofetch */
+.term-neofetch-art {
+  color: #bd93f9;
+  font-size: 0.55rem;
+  line-height: 1.15;
+  opacity: 0.8;
+}
+
+.term-neofetch-label {
+  display: flex;
+  gap: 0;
+}
+
+.neo-key {
+  color: #ff79c6;
+  font-weight: 700;
+}
+
+.neo-value {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.term-neofetch-divider {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.term-neofetch-colors {
+  background: linear-gradient(90deg, 
+    #ff5555 0%, #ff5555 14%, 
+    #ffb86c 14%, #ffb86c 28%, 
+    #f1fa8c 28%, #f1fa8c 42%, 
+    #50fa7b 42%, #50fa7b 56%, 
+    #8be9fd 56%, #8be9fd 70%, 
+    #bd93f9 70%, #bd93f9 84%, 
+    #ff79c6 84%, #ff79c6 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+}
+
+/* ============================================
+   Input Line
+   ============================================ */
+.term-input-line {
+  display: flex;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+
+.term-input-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.term-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #f8f8f2;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 0.85rem;
+  width: 100%;
+  caret-color: transparent;
+}
+
+.term-cursor {
+  color: #50fa7b;
+  font-size: 0.95rem;
+  opacity: 0;
+  transition: opacity 0.1s;
+  position: relative;
+  left: -2px;
+  animation: none;
+}
+
+.term-cursor.visible {
+  opacity: 1;
+}
+
+/* ============================================
+   Status Bar
+   ============================================ */
+.terminal-statusbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 1rem;
+  background: #1a1b26;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+}
+
+.statusbar-left,
+.statusbar-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.status-item {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.status-online {
+  color: #50fa7b;
+}
+
+/* ============================================
+   Scan Line Effect (CRT style)
+   ============================================ */
+.terminal-body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+  z-index: 1;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 768px) {
+  .terminal-window {
+    border-radius: 8px;
+    margin: 0 -0.5rem;
+  }
+
+  .terminal-body {
+    padding: 1rem;
+    font-size: 0.75rem;
+    min-height: 350px;
+    max-height: 500px;
+  }
+
+  .term-system {
+    font-size: 0.42rem;
+    line-height: 1.05;
+  }
+
+  .term-neofetch-art {
+    font-size: 0.38rem;
+  }
+
+  .term-help {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .term-help-cmd {
+    min-width: unset;
+  }
+
+  .term-help-desc {
+    padding-left: 2ch;
+    font-size: 0.72rem;
+  }
+
+  .terminal-quick-cmds {
+    gap: 0.35rem;
+  }
+
+  .quick-cmd-btn {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.72rem;
+  }
+
+  .terminal-titlebar {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .terminal-title-text {
+    font-size: 0.68rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal-body {
+    font-size: 0.68rem;
+    padding: 0.8rem;
+    min-height: 300px;
+  }
+
+  .term-system {
+    font-size: 0.35rem;
+  }
+
+  .term-neofetch-art {
+    display: none;
+  }
+
+  .term-table-header,
+  .term-table-divider {
+    font-size: 0.62rem;
+  }
+}

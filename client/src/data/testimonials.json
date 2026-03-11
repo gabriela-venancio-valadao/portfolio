@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Maria Silva",
+    "role": "Product Manager",
+    "company": "Tech Company",
+    "text": "Profissional excepcional! Entrega código de alta qualidade com atenção aos detalhes. Sempre disposto(a) a ajudar a equipe.",
+    "avatar": "👩‍💼"
+  },
+  {
+    "id": 2,
+    "name": "João Santos",
+    "role": "CTO",
+    "company": "Startup Inc",
+    "text": "Um dos melhores devs com quem já trabalhei. Capacidade técnica impressionante e excelente comunicação.",
+    "avatar": "👨‍💻"
+  },
+  {
+    "id": 3,
+    "name": "Ana Oliveira",
+    "role": "Tech Lead",
+    "company": "Digital Agency",
+    "text": "Sempre traz soluções criativas e bem fundamentadas. Mentoria incrível para devs mais novos.",
+    "avatar": "👩‍🔬"
+  }
+]

@@ -1,0 +1,205 @@
+/* ============================================
+   EXPERIENCE - Neon Timeline
+   ============================================ */
+.experience {
+  padding: 6rem 0;
+  background: var(--cyber-bg-light);
+  position: relative;
+}
+
+.experience::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at 60% 50%, rgba(168, 85, 247, 0.03) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--neon-cyan), var(--neon-purple), var(--neon-pink));
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 2rem;
+  position: relative;
+  animation: fadeInUp 0.6s ease both;
+}
+
+.timeline-item.left {
+  justify-content: flex-start;
+  padding-right: 55%;
+}
+
+.timeline-item.right {
+  justify-content: flex-end;
+  padding-left: 55%;
+}
+
+/* Connector */
+.timeline-connector {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.timeline-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: var(--cyber-surface);
+  border: 2px solid var(--neon-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+  transition: all var(--transition-normal);
+  color: var(--neon-cyan);
+}
+
+.timeline-item:hover .timeline-dot {
+  transform: scale(1.15);
+  border-color: var(--neon-purple);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.3);
+  color: var(--neon-purple);
+}
+
+/* Card */
+.timeline-card {
+  background: var(--cyber-surface);
+  padding: 1.5rem 1.7rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--cyber-border);
+  transition: all var(--transition-normal);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--gradient-primary);
+}
+
+.timeline-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--neon-cyan), transparent);
+  opacity: 0.3;
+}
+
+.timeline-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 240, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.08), 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-card-header {
+  margin-bottom: 0.8rem;
+}
+
+.timeline-period {
+  display: inline-block;
+  padding: 0.25rem 0.8rem;
+  background: rgba(0, 240, 255, 0.08);
+  color: var(--neon-cyan);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  margin-bottom: 0.5rem;
+  border: 1px solid rgba(0, 240, 255, 0.15);
+}
+
+.timeline-role {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 0.2rem;
+}
+
+.timeline-company {
+  font-size: 0.95rem;
+  color: var(--neon-purple);
+  font-weight: 500;
+}
+
+.timeline-description {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.timeline-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.timeline-tech-tag {
+  padding: 0.2rem 0.6rem;
+  background: rgba(168, 85, 247, 0.08);
+  color: var(--neon-purple);
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    padding-left: 60px;
+    padding-right: 0;
+    justify-content: flex-start;
+  }
+
+  .timeline-connector {
+    left: 20px;
+  }
+
+  .timeline-dot {
+    width: 36px;
+    height: 36px;
+  }
+}
