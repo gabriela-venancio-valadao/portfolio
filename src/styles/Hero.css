@@ -10,7 +10,7 @@
   position: relative;
   overflow: hidden;
   background: var(--cyber-bg);
-  padding: 6rem 2rem 4rem;
+  padding: 4rem 2rem 4rem;
 }
 
 /* Grid background */
@@ -123,7 +123,7 @@
 
 /* Avatar */
 .hero-avatar {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .avatar-ring {
@@ -173,7 +173,7 @@
 
 /* Texto do Hero */
 .hero-text {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .hero-greeting {
@@ -181,7 +181,7 @@
   font-family: var(--font-mono);
   color: var(--neon-cyan);
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
 }
 
@@ -194,7 +194,7 @@
   font-size: 3.5rem;
   font-weight: 800;
   color: var(--text-bright);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   animation: glitch-subtle 5s ease-in-out infinite;
   position: relative;
 }
@@ -204,7 +204,7 @@
   font-weight: 600;
   font-family: var(--font-mono);
   color: var(--text-secondary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .title-bracket {
@@ -227,7 +227,7 @@
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 /* Estatísticas */
@@ -362,12 +362,14 @@
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .hero { padding: 5rem 1.5rem 3rem; }
+  .hero { padding: 3.5rem 1.5rem 3rem; }
   .hero-name { font-size: 2.5rem; }
   .hero-title { font-size: 1.1rem; }
   .hero-greeting { font-size: 0.95rem; }
   .hero-subtitle { font-size: 0.9rem; }
   .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
+  .hero-avatar { margin-bottom: 2rem; }
+  .hero-text { margin-bottom: 2.5rem; }
   .avatar-ring { width: 110px; height: 110px; }
   .avatar-initials { font-size: 2rem; }
   .hero-cta { flex-direction: column; align-items: center; }
@@ -375,11 +377,13 @@
 }
 
 @media (max-width: 480px) {
-  .hero { padding: 4.5rem 1rem 2.5rem; }
+  .hero { padding: 3rem 1rem 2.5rem; }
   .hero-name { font-size: 1.8rem; word-break: break-word; }
   .hero-title { font-size: 0.95rem; }
   .hero-greeting { font-size: 0.85rem; }
   .hero-subtitle { font-size: 0.82rem; }
+  .hero-avatar { margin-bottom: 1.5rem; }
+  .hero-text { margin-bottom: 2rem; }
   .stat-card { padding: 0.8rem 0.6rem; }
   .stat-number { font-size: 1.3rem; }
   .stat-label { font-size: 0.65rem; }

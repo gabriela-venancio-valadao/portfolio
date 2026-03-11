@@ -5,6 +5,7 @@
   padding: 6rem 0;
   background: var(--cyber-bg);
   position: relative;
+  overflow-x: hidden;
 }
 
 .about::before {

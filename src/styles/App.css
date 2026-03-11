@@ -5,8 +5,10 @@
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+  overflow-y: auto;
   background: var(--cyber-bg);
   transition: background-color 0.5s ease, color 0.5s ease;
+  max-width: 100vw;
 }
 
 .app::before {
